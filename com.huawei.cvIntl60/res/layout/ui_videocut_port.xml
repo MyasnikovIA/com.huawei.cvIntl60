@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="200.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <GeneralFunction.Player.player.SphericalVideoPlayer android:id="@id/TV_ui_videocut_VideoPlayer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:id="@id/LL_ui_videocut_TopLayout" android:background="@color/blackt50" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="140.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="140.0" android:layout_weight="150.0">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="37.0" />
+                <ImageButton android:id="@id/IB_ui_videocut_ArrowIcon" android:background="@color/transparent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="fitCenter" android:layout_weight="66.0" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="37.0" />
+            </LinearLayout>
+            <TextView android:gravity="center|left" android:id="@id/TV_ui_videocut_VideoCut" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="370.0" />
+            <TextView android:gravity="center|right" android:id="@id/TV_ui_videocut_FileSize" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="190.0" />
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="190.0">
+                <ImageButton android:id="@id/IB_ui_videocut_SaveIcon" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                <TextView android:textSize="9.0sp" android:textColor="@color/white" android:gravity="bottom|center" android:id="@id/TV_ui_videocut_SaveIcon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1390.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_videocut_VideoControlBar" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="210.0">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="150.0">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="44.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="150.0" android:layout_weight="96.0">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="27.0" />
+                    <ImageButton android:id="@id/IB_ui_videocut_PlayIcon" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="fitCenter" android:layout_weight="96.0" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="27.0" />
+                </LinearLayout>
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="625.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="200.0">
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="133.0" />
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="625.0" android:layout_weight="67.0">
+                            <TextView android:textColor="@color/white" android:gravity="center|left" android:id="@id/TV_ui_videocut_MovieStartTime" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="300.0" />
+                            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="25.0" />
+                            <TextView android:textColor="@color/white" android:gravity="center|right" android:id="@id/TV_ui_videocut_MovieEndTime" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="300.0" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <FrameLayout android:id="@id/FL_ui_videocut_SelectScrollBar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+                <TextView android:textColor="@color/white" android:gravity="center|left" android:id="@id/TV_ui_videocut_MovieLength" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="135.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="60.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_videocut_ProgressLayout" android:background="@color/blackt50" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="650.0" />
+        <ImageView android:id="@id/IV_ui_videocut_ProgressIcon" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/anim_busy_white_background" android:scaleType="fitCenter" android:layout_weight="150.0" />
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_videocut_Content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/saving_files" android:layout_weight="150.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="650.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_videocut_MemoryFullLayout" android:background="@color/blackt50" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="550.0" />
+        <ImageView android:id="@id/IV_ui_videocut_MemoryFullIcon" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/system_ep_white" android:scaleType="fitCenter" android:layout_weight="150.0" />
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_videocut_MemoryFullMsg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/memory_full" android:layout_weight="120.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="100.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="120.0">
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="315.0" />
+            <Button android:textColor="@color/white" android:id="@id/B_ui_videocut_MemoryFullConfirm" android:background="@drawable/btn_bg_blue" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:text="@string/dialog_option_ok" android:layout_weight="270.0" />
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="315.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="560.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_videocut_BlackScreen" android:background="@color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0" />
+</FrameLayout>

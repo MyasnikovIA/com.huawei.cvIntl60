@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="200.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@color/black" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="900.0">
+        <ui_Controller.CustomWidget.CustomRecyclerView.CustomRecyclerView android:id="@id/CRV_ui_normalconvert_Panorama" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="900.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_BlackScreenLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_BlackScreen_TopLayout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="688.0" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_TransparentScreen" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="112.0" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_Old_StampIcon" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="112.0" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_BlackScreen_BotLayout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="688.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_normalconvert_StampIcon" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <Space android:id="@id/SP_normalconvert_StampSpace" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="900.0" />
+        <ImageView android:id="@id/IV_ui_normalconvert_StampIcon" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitStart" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="583.0">
+            <TextView android:textColor="@color/white" android:gravity="bottom|center" android:id="@id/TV_ui_HintTextTop" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/LL_ui_DottedLine" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="434.0">
+            <ImageView android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/gallery_convertpictures_dashline" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="583.0">
+            <TextView android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/TV_ui_HintTextBottom" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_normalconvert_TopLayoutBlankArea" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1257.5" />
+        <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_normalconvert_TopLayout" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="342.5" android:layout_weight="342.5">
+            <LinearLayout android:id="@id/LL_ui_normalconvert_StampSelection" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="155.0">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="15.0" />
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="280.0">
+                    <ImageView android:id="@id/IV_ui_normalconvert_StampSelection0" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ImageButton android:id="@id/IB_ui_normalconvert_StampSelection0" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                </FrameLayout>
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.0" />
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.0">
+                    <ImageView android:id="@id/IV_ui_normalconvert_StampSelection1" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ImageButton android:id="@id/IB_ui_normalconvert_StampSelection1" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                </FrameLayout>
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="15.0" />
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="280.0">
+                    <ImageView android:id="@id/IV_ui_normalconvert_StampSelection2" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ImageButton android:id="@id/IB_ui_normalconvert_StampSelection2" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                </FrameLayout>
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.0" />
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.0">
+                    <ImageView android:id="@id/IV_ui_normalconvert_StampSelection3" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ImageButton android:id="@id/IB_ui_normalconvert_StampSelection3" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                </FrameLayout>
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="15.0" />
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="280.0">
+                    <ImageView android:id="@id/IV_ui_normalconvert_StampSelection4" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    <ImageButton android:id="@id/IB_ui_normalconvert_StampSelection4" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                </FrameLayout>
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="15.0" />
+            </LinearLayout>
+            <LinearLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="135.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="140.0" android:layout_weight="0.0">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="37.0" />
+                    <ImageButton android:id="@id/IB_ui_normalconvert_ArrowIcon" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/gallery_top_back_black" android:scaleType="fitCenter" android:layout_weight="66.0" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="37.0" />
+                </LinearLayout>
+                <TextView android:textColor="@color/black" android:gravity="center|left" android:id="@id/TV_ui_normalconvert" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.0" />
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="300.0" />
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="150.0">
+                    <ImageButton android:id="@id/IB_ui_normalconvert_StampListIcon" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0">
+                        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="75.0" />
+                        <TextView android:textSize="9.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_normalconvert_StampListIcon" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="25.0" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="150.0">
+                    <ImageButton android:id="@id/IB_ui_normalconvert_SaveIcon" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0">
+                        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="75.0" />
+                        <TextView android:textSize="9.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_normalconvert_SaveIcon" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="25.0" />
+                    </LinearLayout>
+                </FrameLayout>
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="300.0" />
+                <ImageButton android:id="@id/IB_ui_normalconvert_MoreIcon" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="0.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="52.5" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_normalconvert_MoreSettingTouchArea" android:background="@color/transparent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_normalconvert_MoreSettingTopLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="16.0">
+        <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                <TextView android:textSize="20.0dip" android:textColor="@color/black" android:gravity="center" android:id="@id/TV_ui_normalconvert_MoreSetting" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/more_setting" android:layout_weight="9.0" />
+                <ImageButton android:layout_gravity="center|right" android:id="@id/IB_ui_normalconvert_MoreSettingReturn" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="30.0dip" android:src="@drawable/system_close_black" android:scaleType="fitCenter" android:layout_weight="2.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <ListView android:id="@id/LV_ui_normalconvert_MoreSettingListView" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/FL_ui_Result_Layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/IV_ui_Result_Panorama" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_Result_TopLayout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="140.0" android:layout_weight="140.0">
+                <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="140.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="140.0" android:layout_weight="150.0">
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="37.0" />
+                        <ImageButton android:id="@id/IB_ui_Result_ArrowIcon" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/gallery_top_back_black" android:scaleType="fitCenter" android:layout_weight="66.0" />
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="37.0" />
+                    </LinearLayout>
+                    <TextView android:textColor="@color/black" android:gravity="center|left" android:id="@id/TV_ui_Result" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="370.0" />
+                    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="240.0" />
+                    <ImageButton android:id="@id/IB_ui_Result_SaveIcon" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/gallery_top_save_black" android:scaleType="fitCenter" android:layout_weight="140.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_normalconvert_ProgressLayout" android:background="@color/blackt50" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="650.0" />
+        <ImageView android:id="@id/IV_ui_normalconvert_ProgressIcon" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/anim_busy_white_background" android:scaleType="fitCenter" android:layout_weight="150.0" />
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_normalconvert_Content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/saving_files" android:layout_weight="150.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="650.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_normalconvert_MemoryFullLayout" android:background="@color/blackt50" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="550.0" />
+        <ImageView android:id="@id/IV_ui_normalconvert_MemoryFullIcon" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/system_ep_white" android:scaleType="fitCenter" android:layout_weight="150.0" />
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_normalconvert_MemoryFullMsg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/memory_full" android:layout_weight="120.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="100.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="120.0">
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="315.0" />
+            <Button android:textColor="@color/white" android:id="@id/B_ui_normalconvert_MemoryFullConfirm" android:background="@drawable/btn_bg_blue" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:text="@string/dialog_option_ok" android:layout_weight="270.0" />
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="315.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="560.0" />
+    </LinearLayout>
+</FrameLayout>

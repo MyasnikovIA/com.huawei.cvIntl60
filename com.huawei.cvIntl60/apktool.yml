@@ -1,0 +1,56 @@
+version: 2.11.0
+apkFileName: com.huawei.cvIntl60.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  tag: null
+sdkInfo:
+  minSdkVersion: 23
+  targetSdkVersion: 28
+packageInfo:
+  forcedPackageId: 127
+  renameManifestPackage: null
+versionInfo:
+  versionCode: 191220
+  versionName: 1.9.12.20
+sharedLibrary: false
+sparseResources: false
+compactEntries: false
+doNotCompress:
+- arsc
+- jpg
+- png
+- wav
+- res/raw/fw0000
+- res/raw/fw13b00.zip
+- res/raw/h264_360test_960p_0002.h264
+- res/raw/h264_360test_960p_0003.h264
+- res/raw/h264_360test_960p_0004.h264
+- res/raw/h264_360test_960p_0005.h264
+- res/raw/h264_360test_960p_0006.h264
+- res/raw/h264_360test_960p_0007.h264
+- res/raw/h264_360test_960p_0008.h264
+- res/raw/h264_360test_960p_0009.h264
+- res/raw/h264_360test_960p_0010.h264
+- res/raw/h264_360test_960p_0011.h264
+- res/raw/h264_360test_960p_0012.h264
+- res/raw/h264_360test_960p_0013.h264
+- res/raw/h264_360test_960p_0014.h264
+- res/raw/h264_360test_960p_0015.h264
+- res/raw/h264_360test_960p_0016.h264
+- res/raw/h264_360test_960p_0017.h264
+- res/raw/h264_360test_960p_0018.h264
+- res/raw/h264_360test_960p_0019.h264
+- res/raw/h264_360test_960p_0020.h264
+- res/raw/h264_360test_960p_0021.h264
+- res/raw/h264_360test_960p_0022.h264
+- res/raw/h264_360test_960p_0023.h264
+- res/raw/h264_360test_960p_0024.h264
+- res/raw/h264_360test_960p_0025.h264
+- res/raw/h264_360test_960p_0026.h264
+- res/raw/h264_360test_960p_0027.h264
+- res/raw/h264_360test_960p_0028.h264
+- res/raw/h264_360test_960p_0029.h264
+- res/raw/h264_360test_960p_0030.h264
+- res/raw/samplegallery.zip

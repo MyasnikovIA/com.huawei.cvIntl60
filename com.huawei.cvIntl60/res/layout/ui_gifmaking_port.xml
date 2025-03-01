@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="200.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/FL_ui_gifmaking_VideoPlayer" android:background="@color/black" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="577.5" />
+            <LinearLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="475.0">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" />
+                <GeneralFunction.Player.GifGenerate.GifGenerate android:id="@id/TV_ui_gifmaking_VideoPlayer" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="890.0" />
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/FL_ui_gifmaking_VideoLengthBar" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="25.0" android:layoutDirection="ltr">
+                <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_gifmaking_UnselectedVideoLengthBar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_gifmaking_SelectedVideoLengthBar" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <Button android:id="@id/B_ui_gifmaking_VideoLengthBarTouchArea" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="" />
+            </FrameLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="152.5" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="150.0">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="162.0" />
+                <FrameLayout android:id="@id/FL_ui_gifmaking_SelectScrollBar" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="576.0" />
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="162.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="32.5" />
+            <LinearLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="135.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="140.0" android:layout_weight="0.0">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="37.0" />
+                    <ImageButton android:id="@id/IB_ui_gifmaking_ArrowIcon" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="fitCenter" android:layout_weight="66.0" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="37.0" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="150.0" />
+                <FrameLayout android:id="@id/FL_ui_gifmaking_DirectionIconLayout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="150.0">
+                    <ImageButton android:id="@id/IB_ui_gifmaking_DirectionIcon" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0">
+                        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="75.0" />
+                        <TextView android:textSize="9.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_gifmaking_DirectionIcon" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="25.0" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="150.0">
+                    <ImageButton android:id="@id/IB_ui_gifmaking_StampListIcon" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0">
+                        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="75.0" />
+                        <TextView android:textSize="9.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_gifmaking_StampListIcon" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="25.0" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="150.0">
+                    <ImageButton android:id="@id/IB_ui_gifmaking_PlayIcon" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0">
+                        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="75.0" />
+                        <TextView android:textSize="9.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_gifmaking_PlayIcon" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="25.0" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="150.0">
+                    <ImageButton android:id="@id/IB_ui_gifmaking_SaveIcon" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="100.0">
+                        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="75.0" />
+                        <TextView android:textSize="9.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_gifmaking_SaveIcon" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="25.0" />
+                    </LinearLayout>
+                </FrameLayout>
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="150.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="52.5" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="1243.0">
+                <Space android:id="@id/SP_gifmaking_StampSpace" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="680.0" />
+                <ImageView android:id="@id/IV_ui_gifmaking_StampIcon" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitStart" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/LL_ui_gifmaking_StampSelection" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="155.0">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="15.0" />
+                <ImageButton android:id="@id/IB_ui_gifmaking_StampSelection0" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="280.0" />
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.0" />
+                <ImageButton android:id="@id/IB_ui_gifmaking_StampSelection1" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="0.0" />
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="15.0" />
+                <ImageButton android:id="@id/IB_ui_gifmaking_StampSelection2" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="280.0" />
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.0" />
+                <ImageButton android:id="@id/IB_ui_gifmaking_StampSelection3" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="0.0" />
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="15.0" />
+                <ImageButton android:id="@id/IB_ui_gifmaking_StampSelection4" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="280.0" />
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="15.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="187.5" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_gifmaking_ProgressLayout" android:background="@color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="650.0" />
+        <ImageView android:id="@id/IV_ui_gifmaking_ProgressIcon" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/anim_busy_white_background" android:scaleType="fitCenter" android:layout_weight="150.0" />
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_gifmaking_Content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/saving_files" android:layout_weight="150.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="650.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_gifmaking_MemoryFullLayout" android:background="@color/blackt50" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="550.0" />
+        <ImageView android:id="@id/IV_ui_gifmaking_MemoryFullIcon" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/system_ep_white" android:scaleType="fitCenter" android:layout_weight="150.0" />
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_gifmaking_MemoryFullMsg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/memory_full" android:layout_weight="120.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="100.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="120.0">
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="315.0" />
+            <Button android:textColor="@color/white" android:id="@id/B_ui_gifmaking_MemoryFullConfirm" android:background="@drawable/btn_bg_blue" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:text="@string/dialog_option_ok" android:layout_weight="270.0" />
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="315.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="560.0" />
+    </LinearLayout>
+</FrameLayout>

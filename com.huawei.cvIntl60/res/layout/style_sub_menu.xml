@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="63.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="45.0" android:layout_weight="6.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="15.0" />
+        <ImageView android:orientation="horizontal" android:id="@id/IV_sub_menu_selectPoint" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/setting_submenu_unselect" android:layout_weight="15.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="54.0">
+        <TextView android:textStyle="bold" android:textColor="@color/darkBlueForTitle" android:gravity="center|left" android:id="@id/sub_menu_choiceText" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="51.0" />
+    </FrameLayout>
+</LinearLayout>

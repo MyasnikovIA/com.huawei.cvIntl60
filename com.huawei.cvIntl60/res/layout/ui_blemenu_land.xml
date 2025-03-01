@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="200.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="45.0">
+        <LinearLayout android:orientation="vertical" android:background="@color/darkBlueForTitle" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="45.0" android:layout_weight="5.0">
+            <FrameLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="80.0">
+                <LinearLayout android:id="@id/LL_ui_BLE_NormalTopLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="80.0">
+                    <ImageButton android:id="@id/IB_ui_BLE_btnReturn" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/setting_tabarrow" android:scaleType="fitCenter" android:layout_weight="8.0" />
+                    <TextView android:textColor="@color/white" android:gravity="center|left" android:id="@id/TV_ui_BLE_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:layout_weight="30.0" />
+                    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="32.0" />
+                    <ImageButton android:id="@id/IB_ui_BLE_btnScan" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="6.0" />
+                    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:background="@color/gainsboroForGroup" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="45.0" android:layout_weight="3.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+            <TextView android:textStyle="bold" android:textColor="@color/darkBlueForTitle" android:gravity="center|left" android:layout_gravity="center_vertical" android:id="@id/TV_ui_BLE_available_device" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="title" android:layout_weight="30.0" />
+        </LinearLayout>
+        <ListView android:id="@id/LV_ui_BLE_DeviceList" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="37.0" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/PB_ui_BLE_ProgressBar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center" android:id="@id/IV_ui_BLE_previous_work" android:background="@color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_ModeChange_MainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_ModeChange_ViewContent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/grid_img" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+    <ImageView android:layout_gravity="bottom|center|left" android:id="@id/grid_movieIcon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitCenter" />
+    <ImageView android:layout_gravity="center" android:id="@id/grid_video360Icon" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+    <TextView android:textColor="@color/white" android:layout_gravity="bottom|center|left" android:id="@id/grid_tv_videoTime" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:layout_gravity="bottom|center|left" android:id="@id/grid_BurstIcon" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    <ImageView android:layout_gravity="bottom|center|left" android:id="@id/grid_TimelapseIcon" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    <ImageView android:layout_gravity="bottom|center|left" android:id="@id/grid_panoramaIcon" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    <ImageView android:layout_gravity="center|left|top" android:id="@id/grid_GifIcon" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    <ImageView android:id="@id/grid_checkbox" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/grid_loadingLayout" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

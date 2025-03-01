@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/IV_ui_videomaking_ImageFrame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_videomaking_ControlLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="900.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="736.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1600.0" android:layout_weight="134.0">
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="41.0" />
+            <ImageButton android:id="@id/IB_ui_videomaking_ControlButton" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/gallery_createvideo_play" android:scaleType="fitCenter" android:layout_weight="134.0" />
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="96.0" />
+            <FrameLayout android:id="@id/FL_ui_videomaking_SelectScrollBar" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1066.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_videomaking_TopLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="900.0" android:layout_weight="1495.0">
+            <FrameLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="112.0">
+                <LinearLayout android:id="@id/LL_ui_videomaking_NormalTopLayout" android:background="@drawable/gallery_toolbar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1495.0">
+                    <ImageButton android:id="@id/IB_ui_videomaking_btnReturn" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/gallery_button_arrowback_normal" android:scaleType="fitCenter" android:layout_weight="123.0" style="android:imageButtonStyle" />
+                    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="512.0">
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/TV_ui_videomaking_FrameRateTitle" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="389.0" />
+                            <ImageView android:id="@id/IV_ui_videomaking_SwitchFrameRateArrow" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/gallery_button_arrowdown_normal" android:scaleType="fitCenter" android:layout_weight="123.0" />
+                        </LinearLayout>
+                        <Button android:id="@id/B_ui_videomaking_SwitchFrameRate" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                    </FrameLayout>
+                    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="671.0" />
+                    <ImageButton android:textColor="@color/white" android:gravity="center" android:id="@id/IB_ui_videomaking_btnMake" android:background="@color/transparent" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/gallery_button_save_normal" android:scaleType="fitCenter" android:layout_weight="123.0" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_videomaking_NavigationBar" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="105.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_videomaking_menu_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="900.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="120.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1600.0" android:layout_weight="436.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="136.0" />
+            <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_videomaking_menu_bg" android:background="@drawable/gallery_gallerylist" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="629.0">
+                <ListView android:id="@id/LV_ui_videomaking_menu_listOption" android:visibility="visible" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/LL_ui_videomaking_ProgressLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="684.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="900.0" android:layout_weight="246.0">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="327.0" />
+            <LinearLayout android:background="@drawable/bg_makevideo_progress" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="245.0">
+                <ImageView android:id="@id/IV_ui_videomaking_ProgressIcon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/anim_busy_white_background" android:scaleType="fitCenter" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

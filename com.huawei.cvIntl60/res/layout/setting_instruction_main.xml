@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/gray30" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1400.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="200.0">
+            <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="320.0" android:layout_weight="320.0">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="80.0" />
+                <ImageButton android:id="@id/IB_ui_user_instructions_leftArrow" android:background="@color/transparent" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/instruction_pageindex_arrow_left" android:text="@string/user_instruction_skip" android:layout_weight="120.0" />
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="240.0">
+                    <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/TV_ui_user_instructions_skip_back" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/user_instruction_skip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/LL_ui_down" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="260.0" />
+            <LinearLayout android:gravity="end" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="320.0" android:layout_weight="320.0">
+                <LinearLayout android:gravity="end" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="240.0">
+                    <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/TV_ui_user_instructions_next_start" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/user_instruction_start" />
+                </LinearLayout>
+                <ImageButton android:id="@id/IB_ui_user_instructions_rightArrow" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/instruction_pageindex_arrow_right" android:layout_weight="120.0" />
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="80.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

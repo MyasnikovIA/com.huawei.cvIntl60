@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="200.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/FL_ui_cameragallery_MultiLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="200.0">
+        <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_multiview_MultiViewLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:weightSum="1600.0">
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="900.0" android:layout_weight="1495.0">
+                <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_multiview_TopLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="900.0">
+                    <LinearLayout android:orientation="vertical" android:background="@color/darkBlueForTitle" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="112.0" android:layout_weight="112.0">
+                        <FrameLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:id="@id/LL_ui_multiview_NormalTopLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1495.0">
+                                <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="50.0" />
+                                <Button android:textColor="@color/white" android:id="@id/B_ui_multiview_SwitchGallery" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="307.0" />
+                                <ImageButton android:id="@id/IB_ui_multiview_SwitchGalleryArrow" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/gallery_button_arrowdown_normal" android:scaleType="fitCenter" android:layout_weight="90.0" />
+                                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="662.0" />
+                                <ImageButton android:textColor="@color/white" android:gravity="center" android:id="@id/IB_ui_multiview_btnShareTab" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/gallery_button_share_normal" android:scaleType="fitCenter" android:layout_weight="100.0" />
+                                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="38.0" />
+                                <ImageButton android:textColor="@color/white" android:gravity="center" android:id="@id/IB_ui_multiview_btnDeleteTab" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/gallery_tool_delete" android:scaleType="fitCenter" android:layout_weight="100.0" />
+                                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="38.0" />
+                                <ImageButton android:textColor="@color/white" android:gravity="center" android:id="@id/IB_ui_multiview_btnNormalMoreTab" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/gallery_button_more_normal" android:scaleType="fitCenter" android:layout_weight="100.0" />
+                            </LinearLayout>
+                            <LinearLayout android:id="@id/LL_ui_multiview_SelectModeTopLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1495.0">
+                                <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="50.0" />
+                                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_multiview_SelectModeTitle" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="307.0" />
+                                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1028.0" />
+                                <ImageButton android:textColor="@color/white" android:gravity="center" android:id="@id/IB_ui_multiview_btnSelectMoreTab" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/gallery_button_more_normal" android:scaleType="fitCenter" android:layout_weight="100.0" />
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                    <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView android:id="@id/GV_ui_multiview_HeaderGridView" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:numColumns="3" android:layout_weight="788.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_multiview_NoFileLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="900.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="112.0" />
+                    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="788.0" android:layout_weight="788.0">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="200.0" />
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="263.0">
+                            <ImageView android:id="@id/IV_ui_multiview_NoFileImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/misc_gallery_empty" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="180.0">
+                            <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="@color/dimgray" android:gravity="center" android:orientation="vertical" android:id="@id/TV_ui_multiview_NoFileText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_photo" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_multiview_BottomLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="900.0">
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="788.0" />
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="112.0">
+                        <LinearLayout android:id="@id/LL_ui_multiview_ShareCancelLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1495.0">
+                            <Button android:textColor="@color/white" android:id="@id/B_ui_multiview_Cancel1" android:background="@color/gray" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/dialog_option_cancel" android:layout_weight="748.0" />
+                            <Button android:textColor="@color/white" android:id="@id/B_ui_multiview_Share" android:background="@color/gray" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/share" android:layout_weight="747.0" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/LL_ui_multiview_DeleteCancelLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1495.0">
+                            <Button android:textColor="@color/white" android:id="@id/B_ui_multiview_Cancel2" android:background="@color/gray" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/dialog_option_cancel" android:layout_weight="748.0" />
+                            <Button android:textColor="@color/white" android:id="@id/B_ui_multiview_Delete" android:background="@color/gray" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/delete" android:layout_weight="747.0" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_multiview_MenuLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="900.0">
+                    <Space android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="112.0" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_multiview_MenuBackgroundLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="206.0">
+                        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1495.0">
+                                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="45.0" />
+                                <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_multiview_SwitchMenuBackground" android:background="@drawable/gallery_gallerylist" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="608.0">
+                                    <ListView android:id="@id/LV_ui_multiview_switchmenu_listOption" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1495.0">
+                                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="833.0" />
+                                <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_multiview_SortMenuBackground" android:background="@drawable/gallery_gallerylist" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="608.0">
+                                    <ListView android:id="@id/LV_ui_multiview_sortmenu_listOption" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1495.0">
+                                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="833.0" />
+                                <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_multiview_SelectAllMenuBackground" android:background="@drawable/gallery_gallerylist" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="608.0">
+                                    <ListView android:id="@id/LV_ui_multiview_selectallmenu_listOption" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <FrameLayout android:id="@id/FL_ui_multiview_BusyLayout" android:background="@color/blackt50" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ProgressBar android:layout_gravity="center" android:id="@id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge" />
+                </FrameLayout>
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_multiview_NavigationBar" android:background="@color/black" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="105.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_Connect_MainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_Connect_ViewContent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1495.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_ModeChange_MainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_ModeChange_ViewContent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1495.0" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/FL_ui_phonegallery_SingleLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/LL_ui_singleview_SingleViewLayout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ui_Controller.CustomWidget.SingleHorizontalScrollView.SingleHorizontalScrollView android:id="@id/LHSV_ui_singleview_ImageView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </ui_Controller.CustomWidget.SingleHorizontalScrollView.SingleHorizontalScrollView>
+            <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_singleview_VideoPlayer" android:background="@color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <GeneralFunction.Player.player.SphericalVideoPlayer android:id="@id/TV_ui_singleview_VideoPlayer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="900.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="795.0" />
+                <LinearLayout android:id="@id/LL_ui_singleview_ListViewLayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1600.0" android:layout_weight="105.0">
+                    <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1495.0">
+                        <ui_Controller.CustomWidget.ListHorizontalScrollView.ListHorizontalScrollView android:id="@id/LHSV_ui_singleview_ListView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        </ui_Controller.CustomWidget.ListHorizontalScrollView.ListHorizontalScrollView>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_singleview_TopLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="900.0" android:layout_weight="1495.0">
+                <FrameLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="112.0">
+                    <LinearLayout android:id="@id/LL_ui_singleview_NormalTopLayout" android:background="@drawable/gallery_toolbar" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1495.0">
+                        <ImageButton android:id="@id/IB_ui_singleview_btnReturn" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/setting_tabarrow" android:scaleType="fitCenter" android:layout_weight="123.0" style="android:imageButtonStyle" />
+                        <TextView android:ellipsize="end" android:id="@id/TV_ui_singleview_title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="472.0" />
+                        <ImageButton android:textColor="@color/white" android:gravity="center" android:id="@id/IB_ui_singleview_btnDisplayModeTab" android:background="@color/transparent" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="140.0" />
+                        <ImageView android:id="@id/IV_ui_singleview_divider" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/gallery_button_divider" android:scaleType="centerCrop" android:layout_weight="80.0" />
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="140.0">
+                            <ImageButton android:textColor="@color/white" android:gravity="center" android:id="@id/IB_ui_singleview_btnCreateMovieTab" android:background="@color/transparent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                            <ImageButton android:textColor="@color/white" android:gravity="center" android:id="@id/IB_ui_singleview_btnCreate360StitchMovieTab" android:background="@color/transparent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+                        </FrameLayout>
+                        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="20.0" />
+                        <ImageButton android:textColor="@color/white" android:gravity="center" android:id="@id/IB_ui_singleview_btnStreamingVideoTab" android:background="@color/transparent" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="140.0" />
+                        <ImageButton android:textColor="@color/white" android:gravity="center" android:id="@id/IB_ui_singleview_btnShareTab" android:background="@color/transparent" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="140.0" />
+                        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="20.0" />
+                        <ImageButton android:textColor="@color/white" android:gravity="center" android:id="@id/IB_ui_singleview_btnDeleteTab" android:background="@color/transparent" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="140.0" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_singleview_NavigationBar" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="105.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_singleview_360ButtonLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+            <FrameLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="900.0" android:layout_weight="1495.0">
+                <LinearLayout android:gravity="center|left" android:orientation="vertical" android:id="@id/LL_ui_singleview_Previous" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageButton android:id="@id/IB_ui_singleview_Previous" android:background="@color/transparent" android:visibility="invisible" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleType="fitCenter" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center|right" android:orientation="vertical" android:id="@id/LL_ui_singleview_Next" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageButton android:id="@id/IB_ui_singleview_Next" android:background="@color/transparent" android:visibility="invisible" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleType="fitCenter" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageButton android:id="@id/IB_ui_singleview_FileType" android:background="@color/transparent" android:visibility="invisible" android:layout_width="80.0dip" android:layout_height="80.0dip" android:scaleType="fitCenter" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageButton android:id="@id/IB_ui_singleview_StopPlayVideo" android:background="@color/transparent" android:visibility="invisible" android:layout_width="50.0dip" android:layout_height="50.0dip" android:scaleType="fitCenter" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_singleview_BusyLayout" android:background="@color/blackt50" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="640.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="900.0" android:layout_weight="320.0">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="321.0" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="209.0">
+                    <ImageView android:id="@id/IV_ui_singleview_BusyIcon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/anim_busy_white_background" android:scaleType="fitCenter" />
+                </LinearLayout>
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_singleview_BusyText" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="113.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_singleview_ProgressBusyLayout" android:background="@color/blackt50" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="640.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="900.0" android:layout_weight="320.0">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="321.0" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="209.0">
+                    <ImageView android:id="@id/IV_ui_singleview_ProgressBusyIcon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/anim_busy_white_background" android:scaleType="fitCenter" />
+                </LinearLayout>
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_singleview_UploadingText" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/uploading_files" android:layout_weight="113.0" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="48.0" />
+                <Button android:textColor="@color/white" android:gravity="center" android:id="@id/B_ui_singleview_Upload_Cancel" android:background="@color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="113.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_multiview_BusyLayout" android:background="@color/blackt50" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="640.0" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="900.0" android:layout_weight="320.0">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="321.0" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="209.0">
+                <ImageView android:id="@id/IV_ui_multiview_BusyIcon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/anim_busy_white_background" android:scaleType="fitCenter" />
+            </LinearLayout>
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_multiview_Deleting" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Deleting..." android:layout_weight="113.0" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="48.0" />
+            <Button android:textColor="@color/white" android:gravity="center" android:id="@id/B_ui_multiview_Delete_Cancel" android:background="@color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="113.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

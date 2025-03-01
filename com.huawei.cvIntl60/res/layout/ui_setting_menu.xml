@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_setting_menu" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:background="@color/grayF2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="135.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="11.0" android:layout_weight="115.0">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                    <ImageButton android:layout_gravity="center" android:id="@id/IB_ui_setting_menu_topBack" android:background="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/settings_top_back" android:scaleType="fitCenter" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="670.0">
+                <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/TV_ui_setting_menu_title" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="115.0" />
+        </LinearLayout>
+        <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1465.0">
+            <ListView android:id="@id/LV_ui_setting_menu" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/grayDE" android:dividerHeight="2.0px" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_setting_submenu" android:focusable="true" android:focusableInTouchMode="true" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:background="@color/grayF2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="135.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="11.0" android:layout_weight="115.0">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                    <ImageButton android:layout_gravity="center" android:id="@id/IB_ui_setting_submenu_topBack" android:background="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/settings_top_back" android:scaleType="fitCenter" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="670.0">
+                <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/TV_ui_setting_submenu_title" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="115.0" />
+        </LinearLayout>
+        <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1465.0">
+            <ListView android:id="@id/LV_ui_setting_submenu" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/grayDE" android:dividerHeight="2.0px" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_setting_about" android:focusable="true" android:focusableInTouchMode="true" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:background="@color/grayF2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="135.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="11.0" android:layout_weight="115.0">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                    <ImageButton android:layout_gravity="center" android:id="@id/IB_ui_setting_about_topBack" android:background="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/settings_top_back" android:scaleType="fitCenter" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="670.0">
+                <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/TV_ui_setting_about_title" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="115.0" />
+        </LinearLayout>
+        <LinearLayout android:background="@color/grayF7" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="100.0" />
+        <LinearLayout android:orientation="vertical" android:background="@color/grayF7" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="154.0">
+            <ImageView android:layout_gravity="center" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/settings_about_huawei_logo" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@color/grayF7" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="235.0" android:layout_weight="235.0">
+            <TextView android:textSize="15.0sp" android:textColor="@color/gray2B" android:gravity="center" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/app_name" android:layout_weight="80.0" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/grayA1" android:gravity="center" android:id="@id/TV_ui_setting_about_version" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="30.0" />
+        </LinearLayout>
+        <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="756.0">
+            <ListView android:id="@id/LV_ui_setting_about" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/grayDE" android:dividerHeight="2.0px" />
+        </LinearLayout>
+        <FrameLayout android:gravity="center" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="220.0">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/LL_ui_about_copyRight" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="730.0">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="430.0">
+                    <TextView android:textColor="@color/grayD5" android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/about_copy_right" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/LL_ui_about_footer" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="900.0">
+                <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="750.0">
+                    <TextView android:textSize="10.0sp" android:textColor="@color/grayD5" android:textColorHighlight="@color/white" android:textColorLink="@color/dialogHyperlinks" android:gravity="bottom|center" android:id="@id/TV_ui_about_footer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:text="@string/about_footer" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_setting_update" android:focusable="true" android:focusableInTouchMode="true" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:background="@color/grayF2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="135.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="11.0" android:layout_weight="115.0">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                    <ImageButton android:layout_gravity="center" android:id="@id/IB_ui_setting_update_topBack" android:background="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/settings_top_back" android:scaleType="fitCenter" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="670.0">
+                <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/TV_ui_setting_update_title" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="115.0" />
+        </LinearLayout>
+        <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1465.0">
+            <ListView android:id="@id/LV_ui_setting_update" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/grayDE" android:dividerHeight="2.0px" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_setting_LegalInformation_submenu" android:focusable="true" android:focusableInTouchMode="true" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:background="@color/grayF2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="135.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="11.0" android:layout_weight="115.0">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                    <ImageButton android:layout_gravity="center" android:id="@id/IB_ui_setting_LegalInformation_sub_TopBack" android:background="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/settings_top_back" android:scaleType="fitCenter" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="670.0">
+                <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/TV_ui_setting_LegalInformation_sub_Title" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="115.0" />
+        </LinearLayout>
+        <LinearLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1465.0">
+            <ListView android:id="@id/LV_ui_setting_LegalInformation_sub_List" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@color/grayDE" android:dividerHeight="2.0px" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_setting_OpensourceLicense" android:focusable="true" android:focusableInTouchMode="true" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:background="@color/grayF2" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="135.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="11.0" android:layout_weight="115.0">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+                    <ImageButton android:layout_gravity="center" android:id="@id/IB_ui_setting_OpensourceLicense_topBack" android:background="@null" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/settings_top_back" android:scaleType="fitCenter" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="670.0">
+                <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/TV_ui_setting_OpensourceLicense_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/open_source_licenses" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="115.0" />
+        </LinearLayout>
+        <ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1465.0">
+            <WebView android:textColor="@color/black" android:id="@id/WV_ui_setting_OpensourceLicense_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_User_Agreement" android:focusable="true" android:focusableInTouchMode="true" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="135.0">
+            <TextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/setting_user_agreement" />
+        </LinearLayout>
+        <ScrollView android:background="@color/ghostwhite" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1330.0">
+            <WebView android:textColor="@color/black" android:id="@id/WV_ui_User_Agreement_Content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+        </ScrollView>
+        <LinearLayout android:orientation="horizontal" android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="135.0">
+            <Button android:layout_gravity="center" android:id="@id/B_ui_User_Agreement_Allow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:text="@string/setting_user_agreement_agree" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_Setting_BusyLayout" android:background="@color/blackt50" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="700.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="150.0">
+            <Space android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="350.0" />
+            <ImageView android:layout_gravity="center" android:id="@id/IV_ui_Setting_BusyIcon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/anim_system_busy" android:scaleType="fitCenter" android:layout_weight="200.0" />
+            <Space android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="350.0" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_Setting_BusyText" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="300.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_Setting_AppUpdate_BusyLayout" android:background="@color/blackt50" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="515.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="150.0">
+            <Space android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="350.0" />
+            <ImageView android:layout_gravity="center" android:id="@id/IV_ui_Setting_AppUpdate_BusyIcon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/anim_system_busy" android:scaleType="fitCenter" android:layout_weight="200.0" />
+            <Space android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="350.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_Setting_AppUpdate_BusyText" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="120.0" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_Setting_AppUpdate_ProgressText" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="120.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="70.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="95.0">
+            <Space android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="350.0" />
+            <Button android:textColor="@color/white" android:layout_gravity="center" android:id="@id/B_ui_Setting_AppUpdate_Cancel" android:background="@color/iconcolor" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:text="@string/dialog_option_cancel" android:layout_weight="200.0" />
+            <Space android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="350.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_Setting_protect_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

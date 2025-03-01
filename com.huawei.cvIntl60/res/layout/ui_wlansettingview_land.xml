@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/FrameLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="80.0" android:layout_weight="1495.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="45.0" android:layout_weight="45.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="10.0" android:layout_weight="10.0">
+                    <TextView android:textStyle="bold" android:textColor="@color/darkBlueForTitle" android:id="@id/SSIDlabel" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="    SSID" android:layout_weight="3.0" />
+                    <TextView android:textStyle="bold" android:textColor="@color/black" android:id="@id/SSIDtext" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0" />/>
+</LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="10.0" android:layout_weight="10.0">
+                    <TextView android:textStyle="bold" android:textColor="@color/darkBlueForTitle" android:id="@id/passwordLabel" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="    Password" android:layout_weight="3.0" />
+                    <EditText android:id="@id/passwordEditText" android:layout_width="fill_parent" android:layout_height="0.0dip" android:lines="2" android:ems="10" android:password="true" android:maxLength="16" android:layout_weight="6.0" android:inputType="textPassword" android:fontFamily="sans-serif" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="60.0" android:layout_weight="5.0">
+                    <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.0" />
+                    <CheckBox android:textStyle="bold" android:textColor="@color/grey" android:id="@id/password_toggle" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Show password" android:layout_weight="50.0" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="12.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="45.0" android:layout_weight="15.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="15.0" />
+                <Button android:textColor="@color/white" android:id="@id/btncancel" android:background="@drawable/setting_wifi_button" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Cancel" android:layout_weight="6.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+                <Button android:textColor="@color/white" android:id="@id/btnDone" android:background="@drawable/setting_wifi_button" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Done" android:layout_weight="6.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_wifisetup_NavigationBar" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="105.0" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/PB_ui_wlan_setting_ProgressBar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/FL_ui_wlan_setting_GreyBG" android:background="@color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.6">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</FrameLayout>

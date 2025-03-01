@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/LL_ui_singleview_Settinglayout" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.6">
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.5" />
+        <TextView android:textSize="25.0dip" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/TV_ui_singleview_MoreSettingText" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="aabbabc" android:layout_weight="7.0" />
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/IV_ui_singleview_MoreSettingBtn" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="25.0dip" android:scaleType="centerInside" android:layout_weight="2.0" />
+    </LinearLayout>
+</LinearLayout>

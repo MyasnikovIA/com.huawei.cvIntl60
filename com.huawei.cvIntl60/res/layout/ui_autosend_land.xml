@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_AutoSend_Background" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="900.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1600.0" android:layout_weight="150.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="258.0" android:layout_weight="186.0">
+                <ImageButton android:id="@id/IB_ui_AutoSend_Returnbtn" android:background="@null" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@null" android:scaleType="fitCenter" android:layout_weight="151.0" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="107.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="442.0" />
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_AutoSend_Title" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Large Text" android:layout_weight="407.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="601.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="356.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1600.0" android:layout_weight="134.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="312.0" />
+            <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_AutoSend_Description" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="Medium Text" android:singleLine="false" android:layout_weight="989.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="312.0" />
+        </LinearLayout>
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_AutoSend_Sending" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Medium Text" android:layout_weight="62.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="89.0" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/LL_ui_AutoSend_NavigationBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1494.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_AutoSend_NavigationBar_Menu" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="106.0" />
+    </LinearLayout>
+</FrameLayout>

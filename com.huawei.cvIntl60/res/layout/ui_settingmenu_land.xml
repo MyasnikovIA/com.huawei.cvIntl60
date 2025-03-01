@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1495.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_settingmenu_NormalLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="900.0">
+                <LinearLayout android:id="@id/LL_ui_settingmenu_NormalTopLayout" android:background="@color/darkBlueForTitle" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="80.0" android:layout_weight="120.0">
+                    <ImageButton android:id="@id/IB_ui_settingmenu_btnReturn" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/setting_tabarrow" android:scaleType="fitCenter" android:layout_weight="8.0" />
+                    <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/TV_ui_settingmenu_textTopTitle" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="" android:layout_weight="40.0" />
+                    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="28.0" />
+                    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                    <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0" />
+                </LinearLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="780.0">
+                    <ListView android:id="@id/LV_ui_settingmenu_listOption" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" />
+                    <ListView android:id="@id/LV_ui_settingmenu_AboutList" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/LL_ui_settingmenu_cameraNamePage" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="80.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="5.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="45.0" android:layout_weight="45.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="10.0" android:layout_weight="10.0">
+                        <TextView android:textStyle="bold" android:textColor="@color/darkBlueForTitle" android:id="@id/TV_ui_settingmenu_cameraNameLabel" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="    Camera Name" android:layout_weight="3.0" />
+                        <EditText android:id="@id/ET_ui_settingmenu_cameraNameEditText" android:layout_width="fill_parent" android:layout_height="0.0dip" android:lines="2" android:ems="10" android:maxLength="20" android:layout_weight="6.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="12.0" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="45.0" android:layout_weight="15.0">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="15.0" />
+                    <Button android:textColor="@color/white" android:id="@id/B_ui_settingmenu_btncancel" android:background="@drawable/setting_wifi_button" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Cancel" android:layout_weight="6.0" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0" />
+                    <Button android:textColor="@color/white" android:id="@id/B_ui_settingmenu_btnDone" android:background="@drawable/setting_wifi_button" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Done" android:layout_weight="6.0" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_settingmenu_NavigationBar" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="105.0" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/FL_ui_settingmenu_GreyBG" android:background="@color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.6" />
+    <LinearLayout android:id="@id/LL_ui_settingmenu_HideMenuBG" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="80.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="20.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_settingmenu_MenuLayout" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="45.0" android:layout_weight="40.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_reserved_top" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="6.0" />
+            <LinearLayout android:id="@id/LL_ui_settingmenu_submenu_title" android:background="@color/darkBlueForTitle" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="34.0" android:layout_weight="6.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/TV_ui_settingmenu_submenu_title" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="33.0" android:alpha="1.0" />
+            </LinearLayout>
+            <ListView android:id="@id/LV_ui_settingmenu_sublistOption" android:background="@color/white" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="1.0dip" android:listSelector="@color/white" android:cacheColorHint="@color/white" android:layout_weight="1.0" android:alpha="1.0" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="7.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.0" />
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/PB_ui_setting_ProgressBar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_settingmenu_ProgressLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="900.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="327.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="245.0">
+            <ImageView android:id="@id/IV_ui_settingmenu_ProgressIcon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/anim_busy_white_background" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_camerasetting_progress_String" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="Medium Text" android:layout_weight="113.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_settingmenu_CameraUpgrade" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1080.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="468.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="144.0">
+            <ImageView android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/setupmenu_cameraupgrade_camera" android:scaleType="fitCenter" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="48.0" />
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/TV_ui_settingmenu_CameraUpgradeHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="1.0" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@color/darkgrayforsetup" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="60.0" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:weightSum="900.0" android:layout_weight="1374.0">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1374.0" android:layout_weight="380.0">
+                <FrameLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="458.0">
+                    <ImageButton android:id="@id/IB_ui_setup_WifiSetup" android:background="@color/darkgrayforsetup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="380.0">
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="330.0" />
+                        <TextView android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/TV_ui_setup_WifiSetup" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="458.0">
+                    <ImageButton android:id="@id/IB_ui_setup_ConnectionSwitch" android:background="@color/darkgrayforsetup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="380.0">
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="330.0" />
+                        <TextView android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/TV_ui_setup_ConnectionSwitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="330.0" />
+                    </LinearLayout>
+                </FrameLayout>
+                <FrameLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="458.0">
+                    <ImageButton android:id="@id/IB_ui_setup_CameraSetup" android:background="@color/darkgrayforsetup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="380.0">
+                        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="330.0" />
+                        <TextView android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/TV_ui_setup_CameraSetup" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="61.0" />
+        <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_setup_NavigationBar" android:background="@color/black" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="105.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_Connect_MainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1920.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_Connect_ViewContent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1800.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_ModeChange_MainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1920.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_ModeChange_ViewContent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1800.0" />
+    </LinearLayout>
+</FrameLayout>

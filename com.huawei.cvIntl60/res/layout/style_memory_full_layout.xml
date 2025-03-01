@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_MemoryFullLayout" android:background="@color/blackt50" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="550.0" />
+        <ImageView android:id="@id/IV_ui_MemoryFullIcon" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/system_ep_white" android:scaleType="fitCenter" android:layout_weight="150.0" />
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_MemoryFullMsg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/memory_full" android:layout_weight="120.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="100.0" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="120.0">
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="315.0" />
+            <Button android:textColor="@color/white" android:id="@id/B_ui_MemoryFullConfirm" android:background="@drawable/btn_bg_blue" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:text="@string/dialog_option_ok" android:layout_weight="270.0" />
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="315.0" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="560.0" />
+    </LinearLayout>
+</FrameLayout>

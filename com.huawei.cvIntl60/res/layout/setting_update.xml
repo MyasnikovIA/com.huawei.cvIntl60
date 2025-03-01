@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="900.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_setting_update_listview_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="450.0">
+        <TextView android:textSize="15.0sp" android:textColor="@color/gray2B" android:gravity="center_vertical" android:id="@id/textTitle" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="20.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:weightSum="18.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="5.0" />
+            <ImageView android:id="@id/IV_setting_update_reddot" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="0.0dip" android:scaleType="fitStart" android:layout_weight="6.0" android:layout_marginStart="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/LL_ui_setting_update_listview_icon" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="450.0">
+        <TextView android:textSize="15.0sp" android:textColor="@color/gray88" android:gravity="center" android:id="@id/textDetail" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        <ImageView android:layout_gravity="center" android:id="@id/setting_update_list_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:layout_marginStart="10.0dip" android:layout_marginEnd="20.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:variablePadding="true" android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="80" android:drawable="@drawable/shooting_shutterbusy_01" />
+    <item android:duration="80" android:drawable="@drawable/shooting_shutterbusy_02" />
+    <item android:duration="80" android:drawable="@drawable/shooting_shutterbusy_03" />
+    <item android:duration="80" android:drawable="@drawable/shooting_shutterbusy_04" />
+    <item android:duration="80" android:drawable="@drawable/shooting_shutterbusy_05" />
+    <item android:duration="80" android:drawable="@drawable/shooting_shutterbusy_06" />
+    <item android:duration="80" android:drawable="@drawable/shooting_shutterbusy_07" />
+    <item android:duration="80" android:drawable="@drawable/shooting_shutterbusy_08" />
+    <item android:duration="80" android:drawable="@drawable/shooting_shutterbusy_09" />
+    <item android:duration="80" android:drawable="@drawable/shooting_shutterbusy_10" />
+    <item android:duration="80" android:drawable="@drawable/shooting_shutterbusy_11" />
+    <item android:duration="80" android:drawable="@drawable/shooting_shutterbusy_12" />
+</animation-list>

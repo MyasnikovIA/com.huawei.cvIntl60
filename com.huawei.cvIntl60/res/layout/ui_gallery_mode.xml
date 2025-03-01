@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_multiview_MultiViewLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <FrameLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="140.0">
+            <android.support.design.widget.TabLayout android:id="@id/TL_ui_multiview_HeaderTabLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:tabIndicatorColor="@color/tablayout_header" app:tabBackground="@color/grayF7" app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" app:tabTextColor="@color/gray88" app:tabSelectedTextColor="@color/tablayout_header" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_multiview_NormalTopLayout" android:background="@color/white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.0" />
+                <ImageButton android:gravity="center" android:id="@id/IB_ui_multiview_btnCancel" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="25.0" android:contentDescription="@string/warning_fix_description" />
+                <TextView android:gravity="center" android:id="@id/TV_ui_multiview_SelectCount" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:layout_weight="115.0" />
+                <ImageButton android:gravity="center" android:id="@id/IB_ui_multiview_selectAll" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="25.0" android:contentDescription="@string/warning_fix_description" />
+                <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="20.0" />
+                <ImageButton android:gravity="center" android:id="@id/IB_ui_multiview_btnMoveTab" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="25.0" android:contentDescription="@string/warning_fix_description" />
+                <Space android:id="@id/SPACE_ui_multiview_MoveAndShare" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="20.0" />
+                <ImageButton android:gravity="center" android:id="@id/IB_ui_multiview_btnShareTab" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="25.0" android:contentDescription="@string/warning_fix_description" />
+                <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="20.0" />
+                <ImageButton android:gravity="center" android:id="@id/IB_ui_multiview_btnDeleteTab" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="25.0" android:contentDescription="@string/warning_fix_description" />
+                <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="20.0" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1460.0">
+            <com.tonicartos.widget.stickygridheaders.StickyGridHeadersGridView android:id="@id/GV_ui_multiview_HeaderGridView" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:numColumns="1" />
+            <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_multiview_NoFileLayout" android:background="@color/white" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+                <Space android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="150.0" />
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="1450.0" android:layout_weight="980.0">
+                    <Space android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="470.0" />
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="330.0">
+                        <ImageView android:id="@id/IV_ui_multiview_NoFileImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/warning_fix_description" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="250.0">
+                        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.1" />
+                        <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="15.0sp" android:textColor="@color/dialogText" android:gravity="center" android:orientation="vertical" android:id="@id/TV_ui_multiview_NoFileText" android:layout_width="wrap_content" android:layout_height="0.0dip" android:text="@string/no_photo" android:layout_weight="2.0" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageButton android:layout_gravity="bottom|center|left" android:id="@id/IB_ui_ShootingModeButton" android:background="@color/transparent" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="30.0dip" android:layout_marginBottom="30.0dip" android:scaleType="centerInside" android:contentDescription="@string/warning_fix_description" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/LL_Phone_Gallery_Warning_Layout" android:background="@drawable/bg_system_warning_toast" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/TV_Phone_Gallery_Warning_Content" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:layout_weight="310.0" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/FL_ui_singleview_SingleViewPlayerLayout" android:background="@color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ui_Controller.CustomWidget.SingleHorizontalScrollView.SingleHorizontalScrollView android:id="@id/LHSV_ui_singleview_ImageView" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </ui_Controller.CustomWidget.SingleHorizontalScrollView.SingleHorizontalScrollView>
+        <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_singleview_VideoPlayer" android:background="@color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <GeneralFunction.Player.player.SphericalVideoPlayer android:id="@id/TV_ui_singleview_VideoPlayer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/LL_ui_BlackScreen" android:background="@color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/FL_ui_EditPreview" android:background="@color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ui_Controller.CustomWidget.ZoomableImageView android:orientation="horizontal" android:id="@id/ZIV_ui_EditPreview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/warning_fix_description" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/LL_EditPreview_TopLayout" android:background="@color/grayfortopbar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:weightSum="900.0" android:alpha="0.9">
+            <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="900.0" />
+            <ImageButton android:id="@id/IB_EditPreview_Share" android:background="@color/transparent" android:layout_width="30.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+            <Space android:layout_width="20.0dip" android:layout_height="fill_parent" />
+            <ImageButton android:id="@id/IB_EditPreview_DeleteOrMore" android:background="@color/transparent" android:layout_width="30.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+            <Space android:layout_width="10.0dip" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/LL_EditPreview_MoreSettingTopLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="16.0">
+            <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <LinearLayout android:orientation="horizontal" android:background="@color/black80" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                    <View android:id="@id/V_EditPreview_MoreSetting" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_EditPreview_MoreSetting" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/more_setting" android:layout_weight="9.0" />
+                    <ImageButton android:layout_gravity="center|right" android:id="@id/IB_EditPreview_MoreSettingReturn" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="30.0dip" android:scaleType="fitCenter" android:layout_weight="2.0" android:contentDescription="@string/warning_fix_description" />
+                </LinearLayout>
+            </LinearLayout>
+            <ListView android:id="@id/LV_EditPreview_MoreSettingListView" android:background="@color/black80" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/black80" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/FL_ui_singleview_singleViewTopLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:id="@id/LL_ui_singleview_TopLayout" android:background="@color/grayfortopbar" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="40.0dip" android:alpha="0.9">
+            <Space android:layout_width="10.0dip" android:layout_height="fill_parent" />
+            <ImageButton android:id="@id/IB_ui_singleview_btnReturn" android:background="@color/transparent" android:layout_width="30.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+            <Space android:layout_width="20.0dip" android:layout_height="fill_parent" />
+            <TextView android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/TV_ui_singleview_information" android:layout_width="160.0dip" android:layout_height="fill_parent" android:text="" />
+            <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="100.0" />
+            <ImageButton android:id="@id/IB_ui_singleview_btnShareTab" android:background="@color/transparent" android:layout_width="30.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+            <Space android:layout_width="20.0dip" android:layout_height="fill_parent" />
+            <ImageButton android:id="@id/IB_ui_singleview_btnMoreTab" android:background="@color/transparent" android:layout_width="30.0dip" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+            <Space android:layout_width="10.0dip" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_singleview_MoreSettingTopLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="16.0">
+            <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                <LinearLayout android:orientation="horizontal" android:background="@color/black80" android:layout_width="fill_parent" android:layout_height="40.0dip">
+                    <View android:id="@id/V_ui_singleview_MoreSetting" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0" />
+                    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_singleview_MoreSetting" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/more_setting" android:layout_weight="9.0" />
+                    <ImageButton android:layout_gravity="center|right" android:id="@id/IB_ui_singleview_MoreSettingReturn" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="30.0dip" android:scaleType="fitCenter" android:layout_weight="2.0" android:contentDescription="@string/warning_fix_description" />
+                </LinearLayout>
+            </LinearLayout>
+            <ListView android:id="@id/LV_ui_singleview_MoreSettingListView" android:background="@color/black80" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/black80" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/FL_ui_singleview_btnPreAndNext" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center|left" android:orientation="vertical" android:id="@id/LL_ui_singleview_Previous" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageButton android:id="@id/IB_ui_singleview_Previous" android:background="@color/transparent" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center|right" android:orientation="vertical" android:id="@id/LL_ui_singleview_Next" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageButton android:id="@id/IB_ui_singleview_Next" android:background="@color/transparent" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="100.0" />
+                <Space android:id="@id/Space_Anchor" android:layout_width="35.0dip" android:layout_height="fill_parent" />
+                <Space android:layout_width="60.0dip" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <Space android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1600.0" />
+        <LinearLayout android:id="@id/LL_ui_singleview_BottomNormalLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="55.0dip">
+            <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="44.0" />
+            <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_singleview_LayoutViewType" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="200.0">
+                <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0" />
+                <ImageButton android:layout_gravity="center" android:id="@id/IB_ui_singleview_btnViewType" android:background="@color/transparent" android:layout_width="40.0dip" android:layout_height="0.0dip" android:scaleType="fitCenter" android:layout_weight="60.0" android:contentDescription="@string/warning_fix_description" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/TV_ui_singleview_btnViewType" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="40.0" />
+                <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0" />
+            </LinearLayout>
+            <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="22.0" />
+            <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_singleview_LayoutSnapshot" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="200.0">
+                <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0" />
+                <ImageButton android:layout_gravity="center" android:id="@id/IB_ui_singleview_btnSnapshot" android:background="@color/transparent" android:layout_width="40.0dip" android:layout_height="0.0dip" android:scaleType="fitCenter" android:layout_weight="60.0" android:contentDescription="@string/warning_fix_description" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/TV_ui_singleview_btnSnapshot" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/snapshot" android:layout_weight="40.0" />
+                <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0" />
+            </LinearLayout>
+            <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="22.0" />
+            <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_singleview_LayoutEdit" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="200.0">
+                <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0" />
+                <ImageButton android:layout_gravity="center" android:id="@id/IB_ui_singleview_btnEdit" android:background="@color/transparent" android:layout_width="40.0dip" android:layout_height="0.0dip" android:scaleType="fitCenter" android:layout_weight="60.0" android:contentDescription="@string/warning_fix_description" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/TV_ui_singleview_btnEdit" android:layout_width="fill_parent" android:layout_height="0.0dip" android:text="@string/edit" android:layout_weight="40.0" />
+                <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0" />
+            </LinearLayout>
+            <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="22.0" />
+            <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_singleview_LayoutDrag" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="200.0">
+                <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="10.0" />
+                <ImageButton android:layout_gravity="center" android:id="@id/IB_ui_singleview_btnDrag" android:background="@color/transparent" android:layout_width="40.0dip" android:layout_height="0.0dip" android:scaleType="fitCenter" android:layout_weight="60.0" android:contentDescription="@string/warning_fix_description" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/TV_ui_singleview_btnDrag" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="40.0" />
+                <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_blank_shareLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="700.0" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/LL_ui_view_shareLayout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="900.0">
+            <LinearLayout android:orientation="horizontal" android:background="@color/black80" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="110.0">
+                <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="20.0" />
+                <TextView android:textColor="@color/white" android:gravity="center|left" android:id="@id/TV_ui_share_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/share_via" android:layout_weight="790.0" />
+                <ImageView android:id="@id/IB_ui_multiview_btnShareCancel" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="90.0" android:contentDescription="@string/warning_fix_description" />
+            </LinearLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="790.0">
+                <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_view_SNSLayout" android:background="@color/black80" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="790.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:weightSum="900.0" android:layout_weight="230.0">
+                        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="90.0" />
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="180.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button1" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button1" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="180.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button2" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button2" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="180.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button3" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button3" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="180.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button4" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button4" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                        </FrameLayout>
+                        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="90.0" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:weightSum="900.0" android:layout_weight="230.0">
+                        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="90.0" />
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="180.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button5" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button5" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="180.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button6" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button6" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="180.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button7" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button7" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="180.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button8" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button8" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                        </FrameLayout>
+                        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="90.0" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:weightSum="900.0" android:layout_weight="230.0">
+                        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="90.0" />
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="180.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button9" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button9" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="180.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button10" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button10" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="180.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button11" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button11" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="180.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button12" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button12" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                        </FrameLayout>
+                        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="90.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_view_SNSLayout_Landscape" android:background="@color/black80" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="790.0">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:weightSum="900.0" android:layout_weight="300.0">
+                        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="90.0" />
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="120.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button1_Landscape" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button1_Landscape" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="120.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button2_Landscape" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button2_Landscape" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="120.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button3_Landscape" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button3_Landscape" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="120.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button4_Landscape" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button4_Landscape" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="120.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button5_Landscape" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button5_Landscape" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="120.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button6_Landscape" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button6_Landscape" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+                        </FrameLayout>
+                        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="90.0" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:baselineAligned="false" android:weightSum="900.0" android:layout_weight="300.0">
+                        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="90.0" />
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="120.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button7_Landscape" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button7_Landscape" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="120.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button8_Landscape" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button8_Landscape" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="120.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button9_Landscape" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button9_Landscape" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="120.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button10_Landscape" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button10_Landscape" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="120.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button11_Landscape" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button11_Landscape" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+                        </FrameLayout>
+                        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="120.0">
+                            <ImageButton android:id="@id/IB_ui_Share_Button12_Landscape" android:background="@color/transparent" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" android:contentDescription="@string/warning_fix_description" />
+                            <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/TV_ui_Share_Button12_Landscape" android:layout_width="fill_parent" android:layout_height="25.0dip" />
+                        </FrameLayout>
+                        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="90.0" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/TV_ui_share_no_sns" android:background="@color/black80" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/share_no_sns" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/LL_ui_Gallery_BusyLayout" android:background="@color/blackt50" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1600.0">
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="700.0" />
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="30.0" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:weightSum="900.0" android:layout_weight="150.0">
+            <Space android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="350.0" />
+            <ImageView android:layout_gravity="center" android:id="@id/IV_ui_Gallery_BusyIcon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scaleType="fitCenter" android:layout_weight="200.0" android:contentDescription="@string/warning_fix_description" />
+            <Space android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="350.0" />
+        </LinearLayout>
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="30.0" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/TV_ui_Gallery_BusyText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/moving_files" />
+        <Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="30.0" />
+        <Button android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/B_ui_Gallery_Busy_Button" android:padding="0.0dip" android:layout_width="100.0dip" android:layout_height="35.0dip" android:text="@string/dialog_option_cancel" />
+    </LinearLayout>
+</FrameLayout>

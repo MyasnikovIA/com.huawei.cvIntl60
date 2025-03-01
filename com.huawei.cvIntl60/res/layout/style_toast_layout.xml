@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/LL_ThumbnailLayout" android:background="@color/white" android:layout_width="70.0dip" android:layout_height="70.0dip">
+        <ImageView android:layout_gravity="center" android:id="@id/ivThumbnailView" android:layout_width="66.0dip" android:layout_height="66.0dip" android:layout_margin="2.0dip" android:scaleType="centerCrop" />
+    </LinearLayout>
+    <Space android:layout_width="10.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="200.0dip" android:layout_height="70.0dip">
+        <Space android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_system_toast" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <LinearLayout android:id="@id/LL_ToastIconLayout" android:layout_width="40.0dip" android:layout_height="fill_parent">
+                <Space android:layout_width="20.0dip" android:layout_height="fill_parent" />
+                <ImageView android:layout_gravity="center" android:id="@id/ivToastIcon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:scaleType="fitCenter" />
+            </LinearLayout>
+            <Space android:layout_width="0.0dip" android:layout_height="fill_parent" />
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/tvToastText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/save_to_myalbum" android:maxLines="2" />
+        </LinearLayout>
+        <Space android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    </LinearLayout>
+</LinearLayout>
