@@ -6231,7 +6231,7 @@
 
     .prologue
     .line 6192
-    const-string v0, "PIC_[0-9]{8}_[0-9]{6}.[a-zA-z0-9]{3}"
+    const-string v0, "PANO_[0-9]{8}_[0-9]{6}.[a-zA-z0-9]{3}"
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
 
