@@ -177,7 +177,7 @@
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v2, "PANO_"
+    const-string v2, "PIC_"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1336,7 +1336,7 @@
 
     .line 176
     :cond_2
-    const-string v0, "DCIM/PANORAMA_HUAWEI/"
+    const-string v0, "DCIM/CV60/"
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -1349,7 +1349,7 @@
 
     move-result-object v0
 
-    const-string v4, "/DCIM/PANORAMA_HUAWEI/"
+    const-string v4, "/DCIM/CV60/"
 
     invoke-virtual {v0, v4}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
 
