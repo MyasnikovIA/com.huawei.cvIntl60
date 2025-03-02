@@ -1336,7 +1336,7 @@
 
     .line 176
     :cond_2
-    const-string v0, "DCIM/CV60/"
+    const-string v0, "DCIM/PANORAMA_HUAWEI/"
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -1349,7 +1349,7 @@
 
     move-result-object v0
 
-    const-string v4, "/DCIM/CV60/"
+    const-string v4, "/DCIM/PANORAMA_HUAWEI/"
 
     invoke-virtual {v0, v4}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
 

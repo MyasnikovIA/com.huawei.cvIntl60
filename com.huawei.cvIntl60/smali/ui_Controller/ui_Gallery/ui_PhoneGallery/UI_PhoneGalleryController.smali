@@ -5727,7 +5727,7 @@
 
     move-result-object v1
 
-    const-string v2, "DCIM/CV60/"
+    const-string v2, "DCIM/PANORAMA_HUAWEI/"
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -5916,7 +5916,7 @@
 
     move-result-object v0
 
-    const-string v1, "DCIM/CV60/"
+    const-string v1, "DCIM/PANORAMA_HUAWEI/"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -19258,7 +19258,7 @@
 
     move-result-object v0
 
-    const-string v3, "DCIM/CV60/"
+    const-string v3, "DCIM/PANORAMA_HUAWEI/"
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -25516,7 +25516,7 @@
 
     move-result-object v0
 
-    const-string v1, "DCIM/CV60/"
+    const-string v1, "DCIM/PANORAMA_HUAWEI/"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -25898,7 +25898,7 @@
 
     move-result-object v3
 
-    const-string v4, "DCIM/CV60/"
+    const-string v4, "DCIM/PANORAMA_HUAWEI/"
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
