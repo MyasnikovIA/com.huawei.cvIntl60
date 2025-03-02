@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="608">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"/>
+        <TextView
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_gravity="left"
+            android:id="@+id/main_menu_optionText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="475"/>
+        <ImageView
+            android:id="@+id/IV_gallery_selectIcon"
+            android:visibility="invisible"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/gallery_list_radiooff"
+            android:layout_weight="67"/>
+    </LinearLayout>
+</FrameLayout>

@@ -24,12 +24,6 @@
         <activity android:configChanges="orientation|screenSize" android:name="ui_Controller.ui_Gallery.ui_PhoneGallery.UI_GifMakingController" android:screenOrientation="sensorPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
         <activity android:configChanges="orientation|screenSize" android:name="ui_Controller.ui_Gallery.ui_PhoneGallery.UI_NormalPicMakingController" android:screenOrientation="sensorPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
         <activity android:configChanges="orientation|screenSize" android:name="ui_Controller.ui_Setting.UI_SettingMenuController" android:screenOrientation="sensorPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
-        <activity android:configChanges="orientation|screenSize" android:name="ui_Controller.ui_LaunchScreen.UI_LaunchScreenController" android:screenOrientation="sensorPortrait" android:theme="@style/AppTheme.Launcher">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
-        </activity>
         <activity android:configChanges="orientation|screenSize" android:name="ui_Controller.ui_Setting.UI_SettingInformation" android:screenOrientation="sensorPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
         <activity android:configChanges="orientation|screenSize" android:name="ui_Controller.ui_Setting.UI_SettingUserInstructions" android:screenOrientation="sensorPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
         <activity android:name="ui_Controller.ui_Entry.ui_EntryController" android:screenOrientation="sensorPortrait" android:theme="@style/AppTheme.Launcher">
@@ -50,5 +44,30 @@
                 <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
             </intent-filter>
         </receiver>
+
+
+        <activity android:configChanges="orientation|screenSize"
+            android:name="ui_Controller.ui_LaunchScreen.UI_LaunchScreenController"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <!--
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                -->
+            </intent-filter>
+        </activity>
+
+
     </application>
 </manifest>

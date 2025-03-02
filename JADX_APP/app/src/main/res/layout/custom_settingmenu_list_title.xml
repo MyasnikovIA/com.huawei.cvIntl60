@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@color/gainsboroForGroup"
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textStyle="bold"
+        android:textColor="@color/darkBlueForTitle"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/settingmenu_list_item_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="title"/>
+</LinearLayout>

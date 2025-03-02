@@ -36,7 +36,7 @@
         <Zipalign_OutputDir>Z:\ApkDeompiuleWin</Zipalign_OutputDir>
         <Zipalign_AlignmentInBytes>4</Zipalign_AlignmentInBytes>
         <Decode_OnlyMainClasses>True</Decode_OnlyMainClasses>
-        <LastUpdateCheck>02/28/2025 08:04:35</LastUpdateCheck>
+        <LastUpdateCheck>03/02/2025 17:31:17</LastUpdateCheck>
         <Build_SetApiLevel>False</Build_SetApiLevel>
         <Decode_DontParseApkInfo>False</Decode_DontParseApkInfo>
         <Build_SignAfterBuild>True</Build_SignAfterBuild>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="846">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="151"/>
+        <ImageView
+            android:id="@+id/settingmenu_list_icon"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_weight="135"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="16"/>
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="start|center_vertical"
+            android:id="@+id/settingmenu_list_item_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="test label"
+            android:layout_weight="544"/>
+    </LinearLayout>
+</FrameLayout>
