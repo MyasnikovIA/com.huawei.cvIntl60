@@ -7,7 +7,7 @@
         <Sign_Schemev2>0</Sign_Schemev2>
         <Decode_SetApiLevel>False</Decode_SetApiLevel>
         <Sign_Schemev1>0</Sign_Schemev1>
-        <Sign_InputFile>Z:\ApkDeompiuleWin\com.huawei.cvIntl60_1.9.12.20-191220_minAPI23(arm64-v8a,armeabi-v7a)(nodpi)_apkmirror.com signed.apk</Sign_InputFile>
+        <Sign_InputFile>Z:\ApkDeompiuleWin\com.huawei.cvIntl60\com.huawei.cvIntl60 signed.apk</Sign_InputFile>
         <Framework_ClearBeforeDecode>True</Framework_ClearBeforeDecode>
         <Sign_KeystorePassword></Sign_KeystorePassword>
         <Decode_NoSrc>False</Decode_NoSrc>
@@ -44,7 +44,7 @@
         <Zipalign_Recompress>False</Zipalign_Recompress>
         <Build_ApiLevel>29</Build_ApiLevel>
         <Zipalign_Verbose>False</Zipalign_Verbose>
-        <Build_InputDir>Z:\ApkDeompiuleWin\com.huawei.cvIntl60_1.9.12.20-191220_minAPI23(arm64-v8a,armeabi-v7a)(nodpi)_apkmirror.com</Build_InputDir>
+        <Build_InputDir>Z:\ApkDeompiuleWin\com.huawei.cvIntl60\com.huawei.cvIntl60</Build_InputDir>
         <Zipalign_CheckOnly>False</Zipalign_CheckOnly>
         <Sign_OutputDir></Sign_OutputDir>
         <Decode_MatchOriginal>False</Decode_MatchOriginal>
@@ -55,7 +55,7 @@
         <Decode_NoRes>False</Decode_NoRes>
         <Build_UseFramework>False</Build_UseFramework>
         <Sign_Schemev3>0</Sign_Schemev3>
-        <Decode_InputAppPath>Z:\ApkDeompiuleWin\com.huawei.cvIntl60_1.9.12.20-191220_minAPI23(arm64-v8a,armeabi-v7a)(nodpi)_apkmirror.com.apk</Decode_InputAppPath>
+        <Decode_InputAppPath>Z:\ApkDeompiuleWin\com.huawei.cvIntl60\com.huawei.cvIntl60.apk</Decode_InputAppPath>
         <Sign_PublicKey>Z:\ApkDeompiuleWin\APK.Tool.GUI.v3.3.1.5\Resources\testkey.x509.pem</Sign_PublicKey>
         <Zipalign_OverwriteOutputFile>False</Zipalign_OverwriteOutputFile>
         <Build_OutputAppPath></Build_OutputAppPath>

@@ -45,7 +45,6 @@
             </intent-filter>
         </receiver>
 
-
         <activity android:configChanges="orientation|screenSize"
             android:name="ui_Controller.ui_LaunchScreen.UI_LaunchScreenController"
             android:screenOrientation="sensorPortrait"
@@ -55,19 +54,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
-
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <!--
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-                -->
-            </intent-filter>
-        </activity>
-
 
     </application>
 </manifest>
