@@ -12,24 +12,35 @@
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-    <application android:allowBackup="false" android:appComponentFactory="android.support.v4.app.CoreComponentFactory" android:icon="@drawable/appicon_1024x1024" android:label="@string/app_name" android:name="ui_Controller.ui_StartMode.UI_ModeMain" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@android:style/Theme.Light.NoTitleBar">
+    <application android:allowBackup="false"
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:icon="@drawable/appicon_1024x1024"
+        android:label="@string/app_name" 
+        android:name="ui_Controller.ui_StartMode.UI_ModeMain"
+        android:resizeableActivity="false"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar">
+
         <provider android:authorities="com.huawei.cvIntl60.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/files_path"/>
         </provider>
+
         <activity android:configChanges="layoutDirection|locale|orientation|screenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="ui_Controller.ui_Liveview.UI_LiveViewController" android:screenOrientation="sensorPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
         <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="ui_Controller.ui_Gallery.ui_PhoneGallery.UI_PhoneGalleryController" android:screenOrientation="fullSensor" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
         <activity android:configChanges="orientation|screenSize" android:name="ui_Controller.ui_Gallery.ui_PhoneGallery.UI_VideoCutController" android:screenOrientation="fullSensor" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
         <activity android:configChanges="orientation|screenSize" android:name="ui_Controller.ui_Gallery.ui_PhoneGallery.UI_GifMakingController" android:screenOrientation="sensorPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
         <activity android:configChanges="orientation|screenSize" android:name="ui_Controller.ui_Gallery.ui_PhoneGallery.UI_NormalPicMakingController" android:screenOrientation="sensorPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
         <activity android:configChanges="orientation|screenSize" android:name="ui_Controller.ui_Setting.UI_SettingMenuController" android:screenOrientation="sensorPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+        <activity android:configChanges="orientation|screenSize" android:name="ui_Controller.ui_Setting.UI_SettingInformation" android:screenOrientation="sensorPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+        <activity android:configChanges="orientation|screenSize" android:name="ui_Controller.ui_Setting.UI_SettingUserInstructions" android:screenOrientation="sensorPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+
+
         <activity android:configChanges="orientation|screenSize" android:name="ui_Controller.ui_LaunchScreen.UI_LaunchScreenController" android:screenOrientation="sensorPortrait" android:theme="@style/AppTheme.Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:configChanges="orientation|screenSize" android:name="ui_Controller.ui_Setting.UI_SettingInformation" android:screenOrientation="sensorPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
-        <activity android:configChanges="orientation|screenSize" android:name="ui_Controller.ui_Setting.UI_SettingUserInstructions" android:screenOrientation="sensorPortrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
         <activity android:name="ui_Controller.ui_Entry.ui_EntryController" android:screenOrientation="sensorPortrait" android:theme="@style/AppTheme.Launcher">
             <intent-filter>
                 <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
